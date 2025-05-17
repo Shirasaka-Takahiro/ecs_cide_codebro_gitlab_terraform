@@ -9,13 +9,13 @@ resource "aws_codestarconnections_host" "default" {
   provider_endpoint = var.provider_endpoint
   provider_type     = "GitLabSelfManaged"
 
-  vpc_configuration {
-    vpc_id     = var.vpc_id
-    subnet_ids = var.public_subnet_ids
-    security_group_ids = [
-      var.operation_sg_1_id,
-      var.ec2_http_sg_id,
-      var.ec2_https_sg_id
-    ]
-  }
+  #vpc_configuration {
+  #  vpc_id     = var.vpc_id
+  #  subnet_ids = var.public_subnet_ids
+  #  security_group_ids = [
+  #    var.operation_sg_1_id,
+  #    var.ec2_http_sg_id,
+  #    var.ec2_https_sg_id
+  #  ]
+  #}
 }
